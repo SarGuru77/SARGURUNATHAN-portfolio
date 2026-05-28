@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sargurunathan — Python Full Stack Developer specializing in Django, Flask, FastAPI, React, and modern web technologies. Available for freelance projects.">
+  <title>Sargurunathan | Python Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <!-- Cursor Glow Effect -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket"></span>SARGURUNATHAN<span class="logo-bracket"></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-greeting">
+          <span class="greeting-wave"></span> Hello, I'm
+        </p>
+        <h1 class="hero-name text-light">
+          <div class="name-line text-light">Sargurunathan</div><span class="name-line accent"></span>
+        </h1>
+        <div class="hero-title-wrapper">
+          <span class="hero-title-prefix">I'm a</span>
+          <span class="hero-title-typed" id="typedText"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-description">
+          I craft robust, scalable web applications with Python & modern frameworks.
+          Building complete full-stack solutions — turning ideas into production-ready code.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Let's Talk</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number text-light" data-target="9">0</span>
+            <span class="stat-label">Years Exp.</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="9">0</span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-portrait">
+          <img src="Gemini_Generated_Image_wbkv40wbkv40wbkv.png" alt="Sargurunathan" class="hero-portrait-img">
+        </div>
+
+       <div class="floating-badge badge-1">
+          <i class="fab fa-python"></i>
+          <span>Python</span>
+        </div>
+        <div class="floating-badge badge-2">
+          <i class="fas fa-fire"></i>
+          <span>Dajago</span>
+        </div>
+        <div class="floating-badge badge-3">
+          <i class="fab fa-js"></i>
+          <span>Javascript</span>
+        </div> 
+      </div>
+    </div>
+    <a href="#about" class="scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-arrow">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </a>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">01.</span> About Me
+      </h2>
+      <div class="about-grid">
+        <div class="about-image-wrapper">
+          <div class="about-image">
+            <div class="about-avatar mb-5">
+              <img  src="Gemini_Generated_Image_2tojof2tojof2toj.png" height="30px" alt="Sargurunathan" style="height: 500px;" class="avatar-img">
+            </div>
+            <div class="experience-badge">
+              <span class="exp-number">3+</span>
+              <span class="exp-text">Years of<br>Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <h3 class="about-heading">Passionate Python Developer & Problem Solver</h3>
+          <p class="about-text">
+            I'm a dedicated Full Stack Developer and Freelancer with deep expertise in the Python ecosystem. 
+            I specialize in building scalable web applications and data-driven solutions 
+            that solve real-world problems.
+          </p>
+          <p class="about-text">
+            My journey in tech started with a curiosity for automation and has evolved into a passion 
+            for creating end-to-end solutions. I believe in writing clean, maintainable code and 
+            following best practices that stand the test of time.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <i class="fas fa-user"></i>
+              <div>
+                <span class="info-label">Name</span>
+                <span class="info-value">Sargurunathan</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <span class="info-label">Email</span>
+                <span class="info-value">sargurunathan9427@gmail.com</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <span class="info-label">Location</span>
+                <span class="info-value">Trichy, Tamil Nadu</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <span class="info-label">Status</span>
+                <span class="info-value available">Available for Work</span>
+              </div>
+            </div>
+          </div>
+          <a href="Black and White Simple Infographic Resume.jpg" class="btn btn-primary" download="Sargurunathan_Resume.jpg">
+            <span>Download CV</span>
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">02.</span> Tech Stack
+      </h2>
+      <p class="section-subtitle">Technologies I work with to bring ideas to life</p>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="backend">Backend</button>
+        <button class="tab-btn" data-tab="frontend">Frontend</button>
+        <button class="tab-btn" data-tab="database">Database</button>
+        <button class="tab-btn" data-tab="devops">DevOps & Tools</button>
+      </div>
+      <div class="skills-content">
+        <!-- Backend -->
+        <div class="skills-panel active" id="panel-backend">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-python"></i></div>
+              <h4>Python</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-fire"></i></div>
+              <h4>Django</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+          
+           
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-chart-area"></i></div>
+              <h4>Pandas</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+           
+          </div>
+        </div>
+        <!-- Frontend -->
+        <div class="skills-panel" id="panel-frontend">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-html5"></i></div>
+              <h4>HTML5</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+              <h4>CSS3</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-js"></i></div>
+              <h4>JavaScript</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+        
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-bootstrap"></i></div>
+              <h4>Bootstrap</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+           
+          </div>
+        </div>
+        <!-- Database -->
+        <div class="skills-panel" id="panel-database">
+          <div class="skills-grid">
+            <!-- <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <h4>PostgreSQL</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div> -->
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <h4>MySQL</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+              <h4>MongoDB</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <!-- <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-memory"></i></div>
+              <h4>Redis</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div> -->
+            <!-- <div class="skill-card">
+              <div class="skill-icon"><i class="fas fa-table"></i></div>
+              <h4>SQLite</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+            </div> -->
+           
+          </div>
+        </div>
+        <!-- DevOps -->
+        <div class="skills-panel" id="panel-devops">
+          <div class="skills-grid">
+            
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+              <h4>Git</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-linux"></i></div>
+              <h4>Linux</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon"><i class="fab fa-aws"></i></div>
+              <h4>AWS</h4>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">03.</span> My Services
+      </h2>
+      <p class="section-subtitle">What I can do for you</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fas fa-server"></i>
+            </div>
+          </div>
+          <h3>Backend Development</h3>
+          <p>Building robust server-side applications with Django, Flask, and FastAPI. Scalable architecture designed for performance and reliability.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Server-Side Logic</li>
+            <li><i class="fas fa-check"></i> Authentication & Security</li>
+            <li><i class="fas fa-check"></i> Database Optimization</li>
+          </ul>
+        </div>
+        <div class="service-card featured">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fas fa-layer-group"></i>
+            </div>
+          </div>
+          <h3>Full Stack Development</h3>
+          <p>End-to-end web application development from concept to deployment. Complete solutions with Python backend and modern frontend.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Complete Web Applications</li>
+            <li><i class="fas fa-check"></i> Responsive UI/UX</li>
+            <li><i class="fas fa-check"></i> Cloud Deployment</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+          </div>
+          <h3>Web Design & UI</h3>
+          <p>Creating beautiful, responsive, and user-friendly interfaces. Modern designs that look great on every device and enhance user experience.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Responsive Layouts</li>
+            <li><i class="fas fa-check"></i> Modern UI/UX</li>
+            <li><i class="fas fa-check"></i> Cross-Browser Support</li>
+          </ul>
+        </div>
+        <div class="service-card">
+          <div class="service-icon-wrapper">
+            <div class="service-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+          </div>
+          <h3>Data & Automation</h3>
+          <p>Automating workflows, building data pipelines, and creating intelligent solutions with Python scripting and data analysis tools.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Web Scraping</li>
+            <li><i class="fas fa-check"></i> Task Automation</li>
+            <li><i class="fas fa-check"></i> Data Visualization</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">04.</span> Featured Projects
+      </h2>
+      <p class="section-subtitle">Some things I've built</p>
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+        <i class="fa-solid fa-car"></i>  </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">Mangodb</span>
+              <span class="tag">React</span>
+            </div>
+            <h3>MOTOR-MATION</h3>
+            <p>Motor related website ,real time motor related news,All kinds of motor vhecle information with frontend powered  by React.
+            </p>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+              <i class="fas fa-comments"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">WebSocket</span>
+              <span class="tag">Redis</span>
+            </div>
+            <h3>Real-Time Chat App</h3>
+            <p>WebSocket-based messaging platform with real-time notifications, user presence indicators, and message history powered by Redis.</p>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Chart.js</span>
+            </div>
+            <h3>Analytics Dashboard</h3>
+            <p>Interactive data analytics dashboard with real-time charts, CSV import/export, and automated report generation using Pandas.</p>
+          </div>
+        </div>
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-image">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="project-link" title="View Live">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="project-link" title="View Code">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+            <div class="project-placeholder">
+              <i class="fas fa-blog"></i>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Django</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">React</span>
+            </div>
+            <h3>Blog CMS Platform</h3>
+            <p>Content management system with markdown editor, SEO optimization, comment system, and social sharing capabilities.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        <span class="title-number">05.</span> Get In Touch
+      </h2>
+      <p class="section-subtitle">Let's work together on your next project</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Let's build something amazing</h3>
+          <p>I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. Drop me a message!</p>
+         
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="formName" placeholder=" " required>
+            <label for="formName">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="formEmail" placeholder=" " required>
+            <label for="formEmail">Your Email</label>
+          </div>
+          <div class="form-group">
+            <input type="text" id="formSubject" placeholder=" ">
+            <label for="formSubject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" rows="5" placeholder=" " required></textarea>
+            <label for="formMessage">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-bracket"></span>SARGURUNATHAN<span class="logo-bracket"></span>
+          </a>
+          <p>Crafting digital experiences with Python & passion.</p>
+        </div>
+         <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <span class="contact-label">Email</span>
+                <a href="mailto:sargurunathan9427@gmail.com" class="contact-value">sargurunathan9427@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <span class="contact-label">Phone</span>
+                <a href="tel:+918870948927" class="contact-value">+91 88709 48927</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Trichy, Tamil Nadu, India</span>
+              </div>
+            </div>
+        
+          <div class="social-links">
+            <a href="#" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=8870948927&text&type=phone_number&app_absent=0"  class="social-link" title="Whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>  </div>
+        <div class="footer-links" style="display: flex;flex-direction: column;">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Sargurunathan. All rights reserved.</p>
+        <!-- <p>Built with <span class="heart">&hearts;</span> and Python</p> -->
+      </div>
+    </div>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
