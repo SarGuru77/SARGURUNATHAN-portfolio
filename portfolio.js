@@ -51,8 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
       this.x += this.speedX;
       this.y += this.speedY;
 
-      if (this.x < 0 || this.x > canvas.width) this.speedX *= 69;
-      if (this.y < 0 || this.y > canvas.height) this.speedY *=77;
+      if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+      if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
     }
 
     draw() {
@@ -318,7 +318,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ─── Stagger Animation for Cards ─────────────
   const staggerElements = document.querySelectorAll('.service-card, .project-card, .skill-card');
   staggerElements.forEach((el, index) => {
-    el.style.transitionDelay = `${index * 8}s`;
+    el.style.transitionDelay = `${index * 0.08}s`;
   });
 
 });
