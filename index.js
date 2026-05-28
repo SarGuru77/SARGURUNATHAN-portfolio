@@ -6,19 +6,19 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // ─── Cursor Glow ─────────────────────────────
-  // const cursorGlow = document.getElementById('cursorGlow');
-  // let mouseX = 0, mouseY = 0;
-  // let glowX = 0, glowY = 0;
+  const cursorGlow = document.getElementById('cursorGlow');
+  let mouseX = 0, mouseY = 0;
+  let glowX = 0, glowY = 0;
 
-  // document.addEventListener('mousemove', (e) => {
-  //   mouseX = e.clientX;
-  //   mouseY = e.clientY;
-  //   cursorGlow.style.opacity = '1';
-  // });
+  document.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+    cursorGlow.style.opacity = '1';
+  });
 
-  // document.addEventListener('mouseleave', () => {
-  //   cursorGlow.style.opacity = '0';
-  // });
+  document.addEventListener('mouseleave', () => {
+    cursorGlow.style.opacity = '0';
+  });
 
  
   // ─── Particle Background ─────────────────────
